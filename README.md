@@ -6,4 +6,4 @@
 
 ### We hope that you'll have a great time here!
 
-![]("https://github.com/Viljammsson/KarlebyCoffee/blob/main/Images/capuchinop.png")
+![](Images/capuchinop.png)
