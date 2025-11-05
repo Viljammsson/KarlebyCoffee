@@ -276,3 +276,9 @@ section[data-grid] article {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+.flag {
+  width: 40px;
+  height: auto;
+  margin: 5px;
+}
