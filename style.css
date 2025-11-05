@@ -278,11 +278,13 @@ section[data-grid] article {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+section[data-grid] {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 .flag {
   width: 40px;
   height: auto;
   margin: 5px;
-    section[data-grid] {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
