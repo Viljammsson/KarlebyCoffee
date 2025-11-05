@@ -1,5 +1,8 @@
 <!DOCTYPE HTML>
 <html lang="en">
+  <!-- HOW-TO (for owner):
+Duplicate an <article> block, change <img src>, <h3>, and price <p>.
+Keep alt text meaningful. Images go to /Images/. -->
 
 <head>
     <meta charset="utf-8">
@@ -12,38 +15,109 @@
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <header class="site-header">
-    <div class="brand">
-      <a class="logo" href="index.html" aria-label="Karleby Coffee home">Karleby Coffee</a>
+  <header>
+    <div>
+      <img src="Images/logo.png" alt="Karleby Coffee logo" width="36" height="36" style="vertical-align:middle;">
+      <a href="index.html" aria-label="Karleby Coffee home" style="margin-left:0.5rem; vertical-align:middle;">Karleby Coffee</a>
     </div>
 
-    <nav class="site-nav" aria-label="Primary">
+    <nav aria-label="Primary">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a class="is-active" href="menu.html">Menu</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html#about">About us</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="main" class="section">
     <h1>Menu</h1>
+    <section data-grid>
+  <h2>SPECIAL</h2>
 
-    <section>
-      <h2>Coffee</h2>
-      <article>
-        <h3>Espresso</h3>
-        <p>€X.X</p>
-      </article>
-      <article>
-        <h3>Cappuccino</h3>
-        <p>€X.X</p>
-      </article>
-      <article>
-        <h3>Latte</h3>
-        <p>€X.X</p>
-      </article>
-    </section>
+  <article>
+    <img src="Images/pumpkin-spice-latte.jpg" alt="Pumpkin Spice Latte" width="640" height="360" style="max-width:100%; height:auto;">
+    <h3>Pumpkin Spice Latte</h3>
+    <p>€3.0</p>
+  </article>
+
+  <article>
+    <img src="Images/gingerbread-latte.jpg" alt="Gingerbread Latte" width="640" height="360" style="max-width:100%; height:auto;">
+    <h3>Gingerbread Latte</h3>
+    <p>€3.0</p>
+  </article>
+
+  <article>
+    <img src="Images/peppermint-mocha.jpg" alt="Peppermint Mocha" width="640" height="360" style="max-width:100%; height:auto;">
+    <h3>Peppermint Mocha</h3>
+    <p>€3.0</p>
+  </article>
+</section>
+
+    <section data-grid>
+  <h2>Coffee</h2>
+
+  <article>
+    <img src="Images/espresso.jpg" alt="Espresso" width="640" height="360" style="max-width:100%; height:auto;">
+    <h3>Espresso</h3>
+    <p>€3.0</p>
+  </article>
+
+  <article>
+    <img src="Images/capuchinop.png" alt="Cappuccino" width="640" height="360" style="max-width:100%; height:auto;">
+    <h3>Cappuccino</h3>
+    <p>€3.0</p>
+  </article>
+
+  <article>
+    <img src="Images/americano.jpg" alt="Americano" width="640" height="360" style="max-width:100%; height:auto;">
+    <h3>Americano</h3>
+    <p>€3.0</p>
+  </article>
+
+  <article>
+    <img src="Images/latte.jpg" alt="Latte" width="640" height="360" style="max-width:100%; height:auto;">
+    <h3>Latte</h3>
+    <p>€3.0</p>
+  </article>
+
+  <article>
+    <img src="Images/coldbrew.jpg" alt="Cold Brew" width="640" height="360" style="max-width:100%; height:auto;">
+    <h3>Cold Brew</h3>
+    <p>€3.0</p>
+  </article>
+
+  <article>
+    <img src="Images/iced-coffee.jpg" alt="Iced Coffee" width="640" height="360" style="max-width:100%; height:auto;">
+    <h3>Iced Coffee</h3>
+    <p>€3.0</p>
+  </article>
+
+  <article>
+    <img src="Images/macchiato.jpg" alt="Macchiato" width="640" height="360" style="max-width:100%; height:auto;">
+    <h3>Macchiato</h3>
+    <p>€3.0</p>
+  </article>
+
+  <article>
+    <img src="Images/tea.jpg" alt="Tea" width="640" height="360" style="max-width:100%; height:auto;">
+    <h3>Tea</h3>
+    <p>€2.0</p>
+  </article>
+
+  <article>
+    <img src="Images/iced-tea.jpg" alt="Iced Tea" width="640" height="360" style="max-width:100%; height:auto;">
+    <h3>Iced Tea</h3>
+    <p>€3.0</p>
+  </article>
+
+  <article>
+    <img src="Images/hot-chocolate.jpg" alt="Hot Chocolate" width="640" height="360" style="max-width:100%; height:auto;">
+    <h3>Hot Chocolate</h3>
+    <p>€3.0</p>
+  </article>
+</section>
 
   </main>
 

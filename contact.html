@@ -1,5 +1,8 @@
 <!DOCTYPE HTML>
 <html lang="en">
+  <!-- HOW-TO (for owner):
+Change address text below. Update the map by replacing the 'q=' value in the iframe src 
+with your address, or use Google Maps → Share → Embed a map. -->
 
 <head>
     <meta charset="utf-8">
@@ -12,43 +15,59 @@
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <header class="site-header">
-    <div class="brand">
-      <a class="logo" href="index.html" aria-label="Karleby Coffee home">Karleby Coffee</a>
+  <header>
+    <div>
+      <img src="Images/logo.png" alt="Karleby Coffee logo" width="36" height="36" style="vertical-align:middle;">
+      <a href="index.html" aria-label="Karleby Coffee home" style="margin-left:0.5rem; vertical-align:middle;">Karleby Coffee</a>
     </div>
 
-    <nav class="site-nav" aria-label="Primary">
+    <nav aria-label="Primary">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
         <li><a class="is-active" href="contact.html">Contact</a></li>
+        <li><a href="index.html#about">About us</a></li>
       </ul>
     </nav>
   </header>
 
-  <main id="main" class="section">
+  <main id="main">
     <h1>Contact</h1>
 
     <section aria-labelledby="location">
       <h2 id="location">Location & Map</h2>
+      <p>Address: Rantakatu 5, 67100 Kokkola, Finland</p>
+
+      <!-- In src, q = the actual address.-->
+      <div style="width:100%; max-width:900px;">
+        <iframe
+          title="Karleby Coffee on Google Maps"
+          src="https://www.google.com/maps?q=Rantakatu 5, 67100 Kokkola%2C%20Finland&output=embed"
+          width="100%" height="360"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
 
     </section>
 
     <section aria-labelledby="hours">
       <h2 id="hours">Opening Hours</h2>
         <ul>
-            <li>Mon–Fri: 08:00–18:00</li>
-            <li>Sat: 09:00–16:00</li>
-            <li>Sun: Closed</li>
+            <li>Mon: 10:00-20:00</li>
+            <li>Tue - Fri: 9:00-20:00</li>
+            <li>Sat: 9:00-19:30</li>
+            <li>Sun: 10:00-18:00</li>
         </ul>
 
     </section>
 
     <section aria-labelledby="contact-info">
       <h2 id="contact-info">Contact Info</h2>
-        <p>Email:???</p>
-        <p>Phone:???</p>
-
+        <p>Email: <a href="mailto:karlebycoffee@gmail.com">karlebycoffee@gmail.com</a></p>
+      <p>Phone: <a href="tel:+358401234567">+358 050 1234567</a></p>
     </section>
   </main>
 

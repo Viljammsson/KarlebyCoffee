@@ -204,15 +204,75 @@ footer {
 }
 
 .hero-text h1 {
-    font-size: var(--font-size-heading);
+    font-size: 2.5rem;                     /* before var(--font-size-heading) ≈ 2rem */
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.3;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
     font-family: var(--font-body);
     color: var(--color-bg);
+    margin-bottom: 0.8rem;
 }
 
 .hero-text p {
-    font-size: var(--font-size-base);
-    font-family: var(--font-body);
+    font-size: 1.25rem;                    /* before var(--font-size-base) ≈ 1rem */
+    font-weight: 600;
+    line-height: 1.4;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
     color: var(--color-bg);
+}
+
+/* ---- Responsive card grid for menu sections ---- */
+section[data-grid] {
+  display: grid;
+  grid-template-columns: 1fr;             
+  gap: var(--space-m);
+}
+
+
+section[data-grid] > h2 {
+  grid-column: 1 / -1;
+  margin-bottom: var(--space-m);
+}
+
+/* Unified card image size and responsive grid */
+section[data-grid] {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-m);
+}
+
+section[data-grid] > h2 {
+  grid-column: 1 / -1;
+  margin-bottom: var(--space-m);
+}
+
+/* 🔹 Unified image sizing */
+section[data-grid] article img {
+  width: 100%;
+  aspect-ratio: 4 / 3;       
+  object-fit: cover;         
+  border-radius: 6px;
+  display: block;
+  margin-bottom: var(--space-s);
+}
+
+/* make cards equal height */
+section[data-grid] article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Grid layout responsive */
+@media (min-width: 600px) {
+  section[data-grid] {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  section[data-grid] {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
